@@ -6,9 +6,13 @@ con-name lab-static \
 ipv4.method manual \
 ipv4.addresses 192.168.1.10/24 \
 ipv4.gateway 192.168.1.1 \
-ipv4.never-default yes
+ipv4.never-default no
+
+sudo ip route add default via 10.0.10.1
 
 **********bring up ens3 **********
+
+sudo nmcli connection down lab-static
 sudo nmcli connection up lab-static
 
 **********verification**********
