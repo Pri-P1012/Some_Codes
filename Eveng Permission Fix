@@ -1,1 +1,18 @@
 /opt/unetlab/wrappers/unl_wrapper -a fixpermissions
+
+Ubunu pass - 12345678
+
+add keys:
+
+nano ~/.ssh/config
+Host 10.0.10.2
+    KexAlgorithms +diffie-hellman-group14-sha1
+    HostKeyAlgorithms +ssh-rsa
+    PubkeyAcceptedAlgorithms +ssh-rsa
+Then:
+
+Press CTRL + O
+
+Press Enter
+
+Press CTRL + X
